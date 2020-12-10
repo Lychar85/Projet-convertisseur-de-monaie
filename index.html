@@ -9,9 +9,9 @@
      <h2>Taux de change</h2>
      <table>
          <tr>
-             <td><input  type="text" size="15" /></td>
+             <td><input id="fromamount" onkeyup="recupvaleur()"  type="number" size="15" /></td>
              <td>
-                 <select >
+                 <select id="from" onchange="recupvaleur()">
                    <option value="EUR">Europe (EUR)</option>
                    <option value="USD">Dollars US (USD)</option>
                    <option value="JPY">Japanese Yen (JPY)</option>
@@ -19,9 +19,9 @@
              </td>
          </tr>
          <tr>
-            <td><input type="text" size="15"/></td>
+            <td><input id="tomamount" disabled type="text" size="15"/></td>
              <td>
-                 <select>
+                 <select id="to" onchange="recupvaleur()">
                    <option value="GBP">Livres(GBP)</option>
                    <option value="JPY">Japanese Yen (JPY)</option>
                    <option value="USD">Dollars US (USD)</option>
